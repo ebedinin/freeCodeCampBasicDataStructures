@@ -1,7 +1,8 @@
-const arr = [2, 4, 5, 1, 7, 5, 2, 1];
-// Only change code below this line
-// Only change code above this line
+function forecast(arr) {
+    // Only change code below this line
+    arr = arr.slice(2,4)
+    return arr;
+}
 
-arr.splice(0,1);
-arr.splice(3,4);
-console.log(arr);
+// Only change code above this line
+console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
