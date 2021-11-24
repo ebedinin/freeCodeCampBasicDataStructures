@@ -1,12 +1,7 @@
-function copyMachine(arr, num) {
-    let newArr = [];
-    while (num >= 1) {
-        // Only change code below this line
-        newArr.push([...arr]);
-        // Only change code above this line
-        num--;
-    }
-    return newArr;
+function popShift(arr) {
+    let popped = arr.pop(); // Change this line
+    let shifted = arr.shift(); // Change this line
+    return [shifted, popped];
 }
 
-console.log(copyMachine([true, false, true], 2));
+console.log(popShift(['challenge', 'is', 'not', 'complete']));
