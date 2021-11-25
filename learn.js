@@ -1,8 +1,7 @@
-function forecast(arr) {
-    // Only change code below this line
-    arr = arr.slice(2,4)
-    return arr;
+function spreadOut() {
+    let fragment = ['to', 'code'];
+    let sentence = ['learning', ...fragment, 'is', 'fun']; // Change this line
+    return sentence;
 }
 
-// Only change code above this line
-console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+console.log(spreadOut());
