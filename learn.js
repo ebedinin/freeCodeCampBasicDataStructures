@@ -7,10 +7,11 @@ let foods = {
     strawberries: 27
 };
 
-function checkInventory(scannedItem) {
-    // Only change code below this line
-    return foods[scannedItem];
-    // Only change code above this line
-}
+delete foods.oranges;
+delete foods.plums;
+delete foods.strawberries;
+// Only change code below this line
 
-console.log(checkInventory("apples"));
+// Only change code above this line
+
+console.log(foods);
