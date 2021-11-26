@@ -1,17 +1,9 @@
-let foods = {
-    apples: 25,
-    oranges: 32,
-    plums: 28,
-    bananas: 13,
-    grapes: 35,
-    strawberries: 27
-};
-
-delete foods.oranges;
-delete foods.plums;
-delete foods.strawberries;
-// Only change code below this line
-
-// Only change code above this line
-
-console.log(foods);
+function countOnline(usersObj) {
+    // Only change code below this line
+    let count=0;
+    for(let item in usersObj){
+        if(usersObj[item].online) count+=1;
+    }
+    return count;
+    // Only change code above this line
+}
